@@ -2,6 +2,13 @@ import React from "react";
 import Links from "./Links";
 
 function About(props) {
+  if (!props.bio) {
+    return null;
+  } else if (props.bio.trim()==="") {
+    return null;
+  }else{
+  
+  
   return (
     <div id="about">
       <h2>About Me</h2>
